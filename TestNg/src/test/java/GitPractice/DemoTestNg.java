@@ -6,7 +6,7 @@ public class DemoTestNg {
 
 	@Test
 	public void dispatch() {
-		System.out.println("Dispatch Successfully Thanks");
+		System.out.println("Dispatch ");
 		
 	}
 	
