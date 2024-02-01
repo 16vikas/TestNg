@@ -6,9 +6,8 @@ public class DemoTestNg {
 
 	@Test
 	public void dispatch() {
-		System.out.println("Dispatch Successfully  ");
+		System.out.println("Dispatch Successfully Thanks");
 	}
 	
 }
 
-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
