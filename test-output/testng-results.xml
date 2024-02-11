@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-11T09:53:43 IST" name="Suite" finished-at="2024-02-11T09:54:00 IST" duration-ms="16765">
+    <groups>
+    </groups>
+    <test started-at="2024-02-11T09:53:43 IST" name="Test" finished-at="2024-02-11T09:54:00 IST" duration-ms="16765">
+      <class name="tests.HrmTest">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:tests.HrmTest@2aceadd4]" started-at="2024-02-11T09:53:43 IST" name="beforeSuit" finished-at="2024-02-11T09:53:43 IST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:tests.HrmTest@2aceadd4]" started-at="2024-02-11T09:53:43 IST" name="tearUp" finished-at="2024-02-11T09:54:00 IST" duration-ms="16344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="loginLogOutTest(java.util.HashMap)[pri:0, instance:tests.HrmTest@2aceadd4]" started-at="2024-02-11T09:54:00 IST" name="loginLogOutTest" data-provider="dP1" finished-at="2024-02-11T09:54:00 IST" duration-ms="29" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because the return value of "drivers.DriverManagar.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because the return value of "drivers.DriverManagar.getDriver()" is null
+at pages.Basepage.sendKeys(Basepage.java:18)
+at pages.OrangeHRMLoginPage.enterUserName(OrangeHRMLoginPage.java:20)
+at tests.HrmTest.loginLogOutTest(HrmTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogOutTest -->
+        <test-method signature="loginLogOutTest(java.util.HashMap)[pri:0, instance:tests.HrmTest@2aceadd4]" started-at="2024-02-11T09:54:00 IST" name="loginLogOutTest" data-provider="dP1" finished-at="2024-02-11T09:54:00 IST" duration-ms="8" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because the return value of "drivers.DriverManagar.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because the return value of "drivers.DriverManagar.getDriver()" is null
+at pages.Basepage.sendKeys(Basepage.java:18)
+at pages.OrangeHRMLoginPage.enterUserName(OrangeHRMLoginPage.java:20)
+at tests.HrmTest.loginLogOutTest(HrmTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogOutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HrmTest@2aceadd4]" started-at="2024-02-11T09:54:00 IST" name="tearDown" finished-at="2024-02-11T09:54:00 IST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.HrmTest@2aceadd4]" started-at="2024-02-11T09:54:00 IST" name="afterSuite" finished-at="2024-02-11T09:54:00 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tests.HrmTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
