@@ -1,27 +1,36 @@
 package reports;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
-public class ExtentLogger {
+import com.aventstack.extentreports.MediaEntityBuilder;
 
-private ExtentLogger() {}
+import drivers.DriverManager;
+
+public final class ExtentLogger {
+	
+	private ExtentLogger() {}
 	
 	public static void pass(String message)
 	{
-		ExtentManagar.getExtentTest().pass(message);
+		ExtentManager.getExtentTest().pass(message);
 	}
 	
 	public static void fail(String message)
 	{
-		ExtentManagar.getExtentTest().fail(message);
-	
+		//ExtentManager.getExtentTest().fail(message);
+		ExtentManager.getExtentTest().fail(message,
+				MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Image()).build());
 	}
-	
+	public static String getBase64Image()
+	{
+		return ((TakesScreenshot) DriverManager.getDriver()).
+				getScreenshotAs(OutputType.BASE64);
+	}
 
 	
 	public static void skip(String message)
 	{
-		ExtentManagar.getExtentTest().skip(message);
+		ExtentManager.getExtentTest().skip(message);
 	}
 
-	
-	
 }

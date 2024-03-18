@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.HrmTest">
+      <class name="tests.TaskCreate">
         <methods>
+          <include name="createTask"/>
           <include name="tearUp"/>
-          <include name="loginLogOutTest"/>
           <include name="afterSuite"/>
-          <include name="beforeSuit"/>
+          <include name="beforeSuite"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.HrmTest -->
+      </class> <!-- tests.TaskCreate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

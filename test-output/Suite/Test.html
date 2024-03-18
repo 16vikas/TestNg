@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Feb 11 09:53:43 IST 2024</td>
+<td>Started on:</td><td>Tue Mar 12 02:50:04 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16765 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31705 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.HrmTest.loginLogOutTest()'><b>loginLogOutTest</b><br>Test class: tests.HrmTest<br>Parameters: {Username=Admin, Password=admin123}</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;drivers.DriverManagar.getDriver()&quot; is null
-	at pages.Basepage.sendKeys(Basepage.java:18)
-	at pages.OrangeHRMLoginPage.enterUserName(OrangeHRMLoginPage.java:20)
-	at tests.HrmTest.loginLogOutTest(HrmTest.java:37)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1777036987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1777036987'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;drivers.DriverManagar.getDriver()&quot; is null
-	at pages.Basepage.sendKeys(Basepage.java:18)
-	at pages.OrangeHRMLoginPage.enterUserName(OrangeHRMLoginPage.java:20)
-	at tests.HrmTest.loginLogOutTest(HrmTest.java:37)
+<td title='tests.TaskCreate.createTask()'><b>createTask</b><br>Test class: tests.TaskCreate</td>
+<td><div><pre>java.lang.AssertionError: Confirmation message is differnet than Successfully Saved expected [1 new task was added to the customer &quot;HDFC&quot;, project &quot;Investment banking&quot;] but found [1 new task was added to the customer &quot;HDFC&quot;, project &quot;Investment banking&quot;.]
+	at tests.TaskCreate.createTask(TaskCreate.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2141932519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2141932519'><pre>java.lang.AssertionError: Confirmation message is differnet than Successfully Saved expected [1 new task was added to the customer &quot;HDFC&quot;, project &quot;Investment banking&quot;] but found [1 new task was added to the customer &quot;HDFC&quot;, project &quot;Investment banking&quot;.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at tests.TaskCreate.createTask(TaskCreate.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -99,42 +98,25 @@ function toggleAllBoxes() {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>tests.HrmTest@2aceadd4</td></tr>
-<tr>
-<td title='tests.HrmTest.loginLogOutTest()'><b>loginLogOutTest</b><br>Test class: tests.HrmTest<br>Parameters: {Username=Admin, Password=admin123}</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;drivers.DriverManagar.getDriver()&quot; is null
-	at pages.Basepage.sendKeys(Basepage.java:18)
-	at pages.OrangeHRMLoginPage.enterUserName(OrangeHRMLoginPage.java:20)
-	at tests.HrmTest.loginLogOutTest(HrmTest.java:37)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace799383597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace799383597'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;drivers.DriverManagar.getDriver()&quot; is null
-	at pages.Basepage.sendKeys(Basepage.java:18)
-	at pages.OrangeHRMLoginPage.enterUserName(OrangeHRMLoginPage.java:20)
-	at tests.HrmTest.loginLogOutTest(HrmTest.java:37)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-</pre></div></td>
-<td>0</td>
-<td>tests.HrmTest@2aceadd4</td></tr>
+<td>26</td>
+<td>tests.TaskCreate@3c9754d8</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,37 +1,38 @@
 package tests;
-
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 
 import drivers.Drivers;
-import reports.ExtendReport;
+import reports.ExtentReport;
 
 
 public class BaseTest {
-	protected BaseTest(){}
-	 
-	 @BeforeSuite
-	 public void beforeSuit (){
-		 ExtendReport.initReport();
-	 }
-
-	 @AfterSuite
-	 public void afterSuite() {
-		 ExtendReport.flushReports();
-	 }
-	 
-	@BeforeTest
-	public void tearUp() throws Exception {
-		Drivers.initDriver();
+	
+	protected BaseTest() {}
+	
+	@BeforeSuite
+	public void beforeSuite()
+	{
+		ExtentReport.initReports();
+	}
+	@AfterSuite
+	public void afterSuite()
+	{
+		ExtentReport.flushreports();
 	}
 	
-	@AfterTest
-	public void tearDown() {
-		
+	
+	@BeforeMethod
+	protected void tearUp() throws Exception
+	{
+		Drivers.initDriver();
+	
+	}
+	@AfterMethod
+	protected void tearDown()
+	{
 		Drivers.quiteDriver();
 	}
-	
-	
 }
